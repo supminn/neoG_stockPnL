@@ -20,9 +20,28 @@
             <a href="https://twitter.com/supminn" target="_blank" rel="noreferrer"><img class="social-media"
                     src="images/twitter.svg" width="30" alt="Twitter"></img></a>
         </span>
-         <img src="/images/Finance_desktop.svg" id="img-desktop">
+        <img src="/images/Finance_desktop_green.svg" class="img-desktop" id="img-desktop-green">
+        <img src="/images/Finance_desktop_red.svg" class="img-desktop" id="img-desktop-red">
         <div class="content">
             <h1>Stock</h1>
+            <select name="stock-options" id="stock-options">
+            <option value="AMD">Advanced Micro Devices</option>
+            <option value="INTC">Intel</option>
+            <option value="NVDA">Nvidia</option>
+            <option value="IBM">International Business Machines</option>
+            <option value="BA">Boeing Company</option>
+            <option value="AAPL">Apple</option>
+            <option value="NFLX">Netflix</option>
+            <option value="AMZN">Amazon</option>
+            <option value="GOOGL">Google</option>
+            <option value="MSFT">Microsoft</option>
+            <option value="TSLA">Tesla</option>
+                </select>
+            <!-- Take an API and create a drop down of stocks/ search smart(time consuming) https://www.alphavantage.co/
+            Type the number of shares
+            type/find the stock price when bought (specific date)
+            check with current price using API and show profit or loss in % and absolute
+        Change the entire theme when loss is > 50%  -->
         </div>
     </div>
     <footer>
@@ -30,5 +49,7 @@
     </footer>
     <script src="scripts/app.js"></script>
 </body>
-
 </html>
+<!-- 
+https://stockreturnscalculator.netlify.app/
+https://stock-calc.netlify.app/ -->

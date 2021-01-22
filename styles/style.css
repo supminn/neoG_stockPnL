@@ -5,6 +5,7 @@
     --greyShade: #857F70;
     --black: #0D1712;
     --green: #114E39;
+    --red: #8f1010;
 }
 
 body{
@@ -30,8 +31,9 @@ body{
 .content{
     width: 50%;
     height: 90%;
-    border: 1px solid red;
+    border: 1px solid white;
     margin: auto 0;
+    text-align: center;
 }
 
 .social-icons{
@@ -47,6 +49,14 @@ body{
 
 .social-media:hover{
    box-shadow: 2px 2px 10px var(--green), -2px -2px 10px var(--green);
+}
+
+.img-desktop{
+   width: 30%;
+}
+
+#img-desktop-red{
+    display: none;
 }
 
 footer{
