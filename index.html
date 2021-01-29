@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Projects, stock, profit, loss, profit and loss">
+    <meta name="description" content="Web Development Projects">
+    <meta name="author" content="Supriya">
+    <meta name="Copyright" content="SupTECH">
     <link rel="icon" href="images/favicon.jpg" sizes="16x16">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <title>Document</title>
+    <title>Stock: Profit/Loss</title>
 </head>
 
 <body>
@@ -23,25 +27,13 @@
         <img src="/images/Finance_desktop_green.svg" class="img-desktop" id="img-desktop-green">
         <img src="/images/Finance_desktop_red.svg" class="img-desktop" id="img-desktop-red">
         <div class="content">
-            <h1>Stock</h1>
-            <select name="stock-options" id="stock-options">
-            <option value="AMD">Advanced Micro Devices</option>
-            <option value="INTC">Intel</option>
-            <option value="NVDA">Nvidia</option>
-            <option value="IBM">International Business Machines</option>
-            <option value="BA">Boeing Company</option>
-            <option value="AAPL">Apple</option>
-            <option value="NFLX">Netflix</option>
-            <option value="AMZN">Amazon</option>
-            <option value="GOOGL">Google</option>
-            <option value="MSFT">Microsoft</option>
-            <option value="TSLA">Tesla</option>
-                </select>
-            <!-- Take an API and create a drop down of stocks/ search smart(time consuming) https://www.alphavantage.co/
-            Type the number of shares
-            type/find the stock price when bought (specific date)
-            check with current price using API and show profit or loss in % and absolute
-        Change the entire theme when loss is > 50%  -->
+            <h1>Stock - <i>Profit or Loss</i> status</h1>
+            <form>
+                <span>Purchase Price: <input id="purchase-price" type="number" required></span>
+                <span>Purchase Quantity: <input id="purchase-qty" type="number" required></span>
+                <span>Current Price: <input id="current-price" type="number" required></span>
+                <button id="btn-check" type="button">Check Status</button>
+            </form>
         </div>
     </div>
     <footer>
@@ -49,7 +41,5 @@
     </footer>
     <script src="scripts/app.js"></script>
 </body>
+
 </html>
-<!-- 
-https://stockreturnscalculator.netlify.app/
-https://stock-calc.netlify.app/ -->
