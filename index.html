@@ -25,21 +25,23 @@
                     src="images/twitter.svg" width="30" alt="Twitter"></img></a>
         </span>
         <img src="/images/Finance_desktop_green.svg" class="img-desktop" id="img-desktop-green">
-        <img src="/images/Finance_desktop_red.svg" class="img-desktop" id="img-desktop-red">
+        <img src="/images/Finance_desktop_red.svg" class="img-desktop hidden" id="img-desktop-red">
         <div class="content">
             <h1>Stock - <i>Profit or Loss</i> status</h1>
+            <hr/>
             <form>
-                <span>Purchase Price: <input id="purchase-price" type="number" required></span>
-                <span>Purchase Quantity: <input id="purchase-qty" type="number" required></span>
-                <span>Current Price: <input id="current-price" type="number" required></span>
+                <h3>Purchase Price:</h3><input id="purchase-price" type="number" required>
+                <h3>Purchase Quantity:</h3><input id="purchase-qty" type="number" required>
+                <h3>Current Price:</h3><input id="current-price" type="number" required>
                 <button id="btn-check" type="button">Check Status</button>
             </form>
+            <div class="txt-output"></div>
         </div>
     </div>
     <footer>
         <p>Copyright © 2020 SupTECH </p>
     </footer>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
