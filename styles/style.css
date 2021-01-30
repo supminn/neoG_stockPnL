@@ -31,8 +31,6 @@ body {
 .content {
     width: 50%;
     height: 90%;
-    /* border: 1px solid white;
-    border-radius: 1rem; */
     margin: auto 0;
     text-align: center;
 }
@@ -66,13 +64,44 @@ h3 {
 
 #btn-check {
     display: block;
-    margin: auto;
+    margin: 1.5rem auto;
+    padding: 0.5rem;
+    border: 1px solid var(--cream);
+    outline: none;
+    background-color: var(--lightestCream);
+    color: var(--black);
+    font-weight: bold;
+}
+
+#btn-check:hover{
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 hr{
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+input{
+    outline: none;
+    padding-top: 0.5rem;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    width: 25%;
+    background: transparent;
+    border:transparent;
+    border-bottom:  1px solid var(--cream);
+    color: inherit;
+}
+
+.txt-output{
+    margin: 1rem;
+    font-size: x-large;
 }
 
 footer {

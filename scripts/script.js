@@ -15,19 +15,17 @@ const calculatePnL = () => {
         document.querySelector("#img-desktop-green").classList.remove('hidden');
         document.querySelector("#img-desktop-red").classList.add('hidden');
         document.querySelector(".container").style.background = "linear-gradient(to left, var(--green) 60%, var(--lightestCream) 60%)";
-        txtOutput.innerText = `🎉 You gained ${profitLossPercentage}% 👍. Total profit of ₹${profitLoss}!`;
+        txtOutput.innerHTML = `🎉 You gained ${profitLossPercentage}% <br/>👍 Total profit of ₹${profitLoss}.`;
     } else {
         //loss
         let priceDifference = (purchasePrice - currentPrice);
         let profitLoss = priceDifference * purchaseQty;
         let profitLossPercentage = ((priceDifference / purchasePrice) * 100).toFixed(2);
         console.log(profitLossPercentage + "% Loss of Rs" + profitLoss);
-        if (profitLossPercentage > 50) {
-            document.querySelector("#img-desktop-green").classList.add('hidden');
-            document.querySelector("#img-desktop-red").classList.remove('hidden');
-            document.querySelector(".container").style.background = "linear-gradient(to left, var(--red) 60%, var(--lightestCream) 60%)";
-            txtOutput.innerText = `😞 You lost ${profitLossPercentage}% 👎. Total loss of ₹${profitLoss}!`;
-        }
+        document.querySelector("#img-desktop-green").classList.add('hidden');
+        document.querySelector("#img-desktop-red").classList.remove('hidden');
+        document.querySelector(".container").style.background = "linear-gradient(to left, var(--red) 60%, var(--lightestCream) 60%)";
+        txtOutput.innerHTML = `😞 You lost ${profitLossPercentage}% <br/>👎 Total loss of ₹${profitLoss}.`;
     }
 }
 
