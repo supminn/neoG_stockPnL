@@ -107,6 +107,7 @@ input {
 footer {
     position: absolute;
     bottom: 0;
+    color: var(--black);
 }
 
 #spinner {
@@ -132,4 +133,10 @@ footer {
 
 #spinner.show {
     display: block;
+}
+
+@media only screen and (max-width: 500px){
+    .txt-output{
+        font-size: larger;
+    }
 }
