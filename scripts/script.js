@@ -46,3 +46,5 @@ const calculatePnL = (purchasePrice, purchaseQty, currentPrice) => {
 }
 
 btnCheck.addEventListener('click', checkLoad);
+
+//https://stockreturnscalculator.netlify.app/style.css - change theme according to the mood
